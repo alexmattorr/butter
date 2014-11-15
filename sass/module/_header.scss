@@ -15,7 +15,6 @@
 }
 
 .main-header-left, 
-.main-header-center, 
 .main-header-right {
 	float: left;
 	padding-top: 15px;
@@ -24,7 +23,6 @@
 .main-header-mobile,
 .main-header-mobile-button { display: none; }
 
-.main-header-center, 
 .main-header-right {
 	a {
 		color: $white;
@@ -32,7 +30,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 
-		padding: 20px 15px 17px;
+		padding: 20px 15px 18px;
 		margin-left: -5px;
 
 		transition-property: color, background;
@@ -46,15 +44,20 @@
 	width: 25%;
 	text-align: left;
 
+	a {
+		margin-left: 15px;
+		color: $white;
+	}
+
 	.main-header-home {
 		width: 150px;
 		height: auto;
 	}
 }
 
-.main-header-center {
-	width: 50%;
-	text-align: center;
+.main-header-right {
+	width: 75%;
+	text-align: right;
 
 	li {
 		display: inline;
@@ -65,21 +68,15 @@
 	}
 }
 
-.main-header-right {
-	width: 25%;
-	text-align: right;
-}
-
 @media all and (max-width: $desktop) {
 	.main-header-left { .main-header-home { padding-left: 15px;} }	
 }
 
 @media all and (max-width: $tablet) {
 	.main-header { font-size:  .8rem; position: relative; }
-	.main-header-left,  
-	.main-header-right { width: 20%; }
+	.main-header-left { width: 35%; }
+	.main-header-right { width: 60%; }
 
-	.main-header-center {width: 60%;}
 
 	.main-header-left { .main-header-home { padding-left: 15px; width: 125px; } }	
 }
@@ -89,7 +86,6 @@
 		border-bottom: 1px solid $white;
 	}
 
-	.main-header-center,
 	.main-header-right { display: none; }
 
 	.main-header-left { width: 80%; }
@@ -142,11 +138,11 @@
 		background: $green;
 
 		.fa-bars {
-			margin: 16px;
+			margin: 15px 16px;
 		}
 	}
 
-	.mobile-coal {
+	.mobile-bg-coal {
 		background: $coal;
 	}
 }

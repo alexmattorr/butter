@@ -8,7 +8,7 @@ function mobileToggle() {
 
 function mobileColor() {
 	$(".main-header-mobile-button").click(function(){
-		$(this).toggleClass("mobile-coal");
+		$(this).toggleClass("mobile-bg-coal");
 	});
 };
 
