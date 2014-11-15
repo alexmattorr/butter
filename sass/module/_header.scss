@@ -6,7 +6,7 @@
 	z-index: 100;
 
 	color: $white;
-	background: $green;
+	background: $yellow;
 }
 
 .main-header-wrapper {
@@ -41,7 +41,7 @@
 		transition-property: color, background;
 		transition-duration: .2s;
 
-		&:hover { color: $coal; background: $white; }
+		&:hover { color: $white; background: $coal; }
 	}
 }
 
@@ -97,7 +97,7 @@
 		top: 55px;
 		z-index: 99;
 
-		background: $green;
+		background: $yellow;
 		width: 100%;
 
 		li {
@@ -118,7 +118,7 @@
 
 			&:hover {
 				background: $white;
-				color: $green;
+				color: $yellow;
 			}
 		}
 	}
@@ -135,7 +135,7 @@
 
 		cursor: pointer;
 
-		background: $green;
+		background: $yellow;
 
 		.fa-bars {
 			margin: 15px 16px;
