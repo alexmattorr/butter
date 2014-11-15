@@ -9,7 +9,7 @@
     vertical-align: top;
 }
 
-@media all and (max-width: $mobile) { 
+@media all and (max-width: $phone) { 
   .slice {
     & > .slice-item { display: table-row; }
   }
