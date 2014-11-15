@@ -30,11 +30,34 @@
 		margin: 0 auto;
 		text-align: left;
 	}
+
+	img {
+		width: 70%;
+		height: auto;
+	}
 }
 
+
+.home-full-item {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.home-quote {
+	font-style: italic;
+}
 
 @media all and (max-width: $phone) { 
 	.home-item {
 		margin: 50px 0;
+
+		img { 
+			width: 110%;
+			margin-left: -20px;
+		}
+	}
+
+	.home-full-item {
+		width: 90%;
 	}
 }
