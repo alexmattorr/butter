@@ -9,10 +9,20 @@ body {
 	letter-spacing: 1px;
 }
 
-h1{ font-size: 55px; font-family: 'Arimo', sans-serif; font-weight: 700;}
-h2{ font-size: 45px; font-family: 'Arimo', sans-serif; font-weight: 700;}
-h3{ font-size: 35px; font-family: 'Arimo', sans-serif; font-weight: 700;}
-h4{ font-size: 25px; font-family: 'Arimo', sans-serif; font-weight: 700;}
-h5{ font-family: 'Source Sans Pro', sans-serif; font-weight: 600;}
+h1, h2, h3, h4 {
+	font-family: 'Arimo', sans-serif; 
+	font-weight: 700; 
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+h1{font-size: 55px; line-height: 3rem;}
+h2{font-size: 45px; line-height: 2.5rem;}
+h3{font-size: 35px; line-height: 2rem;}
+h4{font-size: 25px; line-height: 1.5rem;}
+h5{ 
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-weight: 600; 
+	text-transform: uppercase; }
 
 a { text-decoration: none; }

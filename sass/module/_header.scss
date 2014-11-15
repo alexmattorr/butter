@@ -14,7 +14,11 @@
 	margin: 0 auto;
 }
 
-.main-header-left, 
+.main-header-left {
+	float: left;
+	padding-top: 6px;
+}
+
 .main-header-right {
 	float: left;
 	padding-top: 15px;
@@ -23,6 +27,7 @@
 .main-header-mobile,
 .main-header-mobile-button { display: none; }
 
+.main-header-left,
 .main-header-right {
 	a {
 		color: $white;
@@ -43,11 +48,6 @@
 .main-header-left {
 	width: 25%;
 	text-align: left;
-
-	a {
-		margin-left: 15px;
-		color: $white;
-	}
 
 	.main-header-home {
 		width: 150px;

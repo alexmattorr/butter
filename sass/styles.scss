@@ -1,15 +1,23 @@
+// includes
+@import "includes/variables";
+
 // base
 @import "compass/reset";
 @import "base/base";
 @import "base/typography";
+@import "base/section";
+@import "base/theme";
 
-// includes
-@import "includes/variables";
+// layout
+@import "layout/slice";
 
 // components
 
 // modules
 @import "module/header";
+
+// pages
+@import "pages/home";
 
 // font-awesome
 @import "font-awesome/variables";
