@@ -74,10 +74,8 @@
 
 @media all and (max-width: $tablet) {
 	.main-header { font-size:  .8rem; position: relative; }
-	.main-header-left { width: 35%; }
-	.main-header-right { width: 60%; }
-
-
+	.main-header-left { width: 25%; }
+	.main-header-right { width: 75%; }
 	.main-header-left { .main-header-home { padding-left: 15px; width: 125px; } }	
 }
 
