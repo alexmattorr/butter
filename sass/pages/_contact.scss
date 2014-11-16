@@ -4,4 +4,56 @@
 
 	background: url(../imgs/bg/1.jpg) no-repeat center center;
 	background-size: cover;
+
+	.contact-form {
+		text-align: center;
+		input[type=text],
+		input[type=email],
+		input[type=submit],
+		textarea {
+			width: 40%;
+		    padding: 10px 15px 11px !important;
+			margin: 5px 0;
+		    font-size: 16px !important;
+		    color: $white;
+		    background: none;
+		    border: 3px solid $white;
+		    cursor: pointer;
+		    &:focus {
+    			outline: 0;
+			}
+		}
+
+		input[type=submit] {
+			text-transform: uppercase;
+
+			transition-property: background;
+			transition-duration: .3s;
+
+			&:hover {
+				color: $yellow;
+				background: $white;
+			}
+		}
+
+		::-webkit-input-placeholder {
+		    color: $white;
+		    font-family: 'Source Sans Pro', sans-serif;
+		    text-transform: uppercase; 
+		    letter-spacing: 1px;
+		}
+		:-moz-placeholder {
+		    color: $white;
+		    opacity:1;
+		}
+		::-moz-placeholder {
+		    color: $white;
+		    opacity:1;
+		}
+		:-ms-input-placeholder {
+		    color: $white;
+		}
+	}
 }
+
+
