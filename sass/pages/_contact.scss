@@ -3,22 +3,27 @@
 	height: 800px;
 	background: $white;
 
+	.contact-page-right {
+		width: 50%;
+		float: left;
+	}
+
 	.contact-page-info {
+		margin: 5px auto 10px 0;
 		h3 {
 			text-align: center;
 		}
 
 		h5 {
-			margin: 25px 0;
+			margin: 10px 0;
 		}
 
 		.contact-info-block {
-			width: 100%;
-			margin: 0 auto;
+			width: 80%;
 		}
 
 		.contact-icon {
-			width: 48px;
+			width: 45px;
 			padding: 15px 0;
 			color: $white;
 			text-align: center;
@@ -35,12 +40,14 @@
 	}
 
 	.contact-form {
+		width: 50%;
+		float: left;
 		text-align: center;
 		input[type=text],
 		input[type=email],
 		input[type=submit],
 		textarea {
-			width: 40%;
+			width: 70%;
 		    padding: 10px 15px 11px !important;
 			margin: 5px 0;
 		    font-size: 16px !important;
@@ -86,6 +93,14 @@
 		:-ms-input-placeholder {
 		    color: $yellow;
 		}
+	}
+}
+
+
+@media all and (max-width: $tablet) {
+	.contact-page-right,
+	.contact-form {
+		width: 100% !important;
 	}
 }
 
