@@ -1,9 +1,38 @@
 .contact-page {
 	width: 100%;
-	height: 600px;
+	height: 800px;
+	background: $white;
 
-	background: url(../imgs/bg/1.jpg) no-repeat center center;
-	background-size: cover;
+	.contact-page-info {
+		h3 {
+			text-align: center;
+		}
+
+		h5 {
+			margin: 25px 0;
+		}
+
+		.contact-info-block {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.contact-icon {
+			width: 48px;
+			padding: 15px 0;
+			color: $white;
+			text-align: center;
+			margin-right: 15px;
+			border-radius: 50%;
+			vertical-align: middle;
+			background: $yellow;
+		}
+
+		.contact-icon, h5 {
+			display: block;
+			float: left;
+		}
+	}
 
 	.contact-form {
 		text-align: center;
@@ -15,13 +44,17 @@
 		    padding: 10px 15px 11px !important;
 			margin: 5px 0;
 		    font-size: 16px !important;
-		    color: $white;
+		    color: $yellow;
 		    background: none;
-		    border: 3px solid $white;
+		    border: 3px solid $yellow;
 		    cursor: pointer;
 		    &:focus {
     			outline: 0;
 			}
+		}
+
+		textarea {
+			height: 150px;
 		}
 
 		input[type=submit] {
@@ -31,27 +64,27 @@
 			transition-duration: .3s;
 
 			&:hover {
-				color: $yellow;
-				background: $white;
+				color: $white;
+				background: $yellow;
 			}
 		}
 
 		::-webkit-input-placeholder {
-		    color: $white;
+		    color: $yellow;
 		    font-family: 'Source Sans Pro', sans-serif;
 		    text-transform: uppercase; 
 		    letter-spacing: 1px;
 		}
 		:-moz-placeholder {
-		    color: $white;
+		    color: $yellow;
 		    opacity:1;
 		}
 		::-moz-placeholder {
-		    color: $white;
+		    color: $yellow;
 		    opacity:1;
 		}
 		:-ms-input-placeholder {
-		    color: $white;
+		    color: $yellow;
 		}
 	}
 }

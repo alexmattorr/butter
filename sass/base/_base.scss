@@ -3,5 +3,9 @@
 	height: auto;
 }
 
-.padding-top {padding-top: 125px !important;}
+.padding-top {padding-top: 125px;}
 .padding-bottom { padding-bottom: 75px !important;}
+
+@media all and (max-width: $phone) { 
+	.padding-top {padding-top: 0px;}
+}

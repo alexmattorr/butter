@@ -42,12 +42,34 @@
 	<!-- Container -->
 	<div class="container contact-page">
 		<section class="section-wrapper">
+			<div class="slice contact-page-info padding-top">
+				<h3>We would love to hear from you.</h3>
+				<div class="contact-page-general-info clearfix">
+					<div class="contact-info-block">
+						<i class="contact-icon fa fa-phone fa-lg"></i>
+						<h5>415.555.1234</h5>
+					</div>
+
+					<div class="contact-info-block">
+						<i class="contact-icon fa fa-envelope"></i>
+						<h5>contact@webbutter.com</h5>
+					</div>
+
+					<div class="contact-info-block">
+						<i class="contact-icon fa fa-map-marker fa-lg"></i>
+						<h5>123 Market Street<br /> San Francisco, Ca<br /> 94123</h5>
+					</div>
+				</div>
+			</div>
+
 			<div class="slice">
-		    	<div class="contact-form padding-top">
+		    	<div class="contact-form">
 		    		<form action="#/" method="POST" name="contact-form" enctype="multipart/form-data">
 						<input type="text" name="name" id="name" placeholder="name" required/>
 						<br />
 						<input type="email" name="email" id="email" placeholder="email" required/>
+						<br />
+						<input type="text" name="subject" id="subject" placeholder="subject" required/>
 						<br />
 						<textarea type="text" name="message" id="message" placeholder="message" required></textarea>
 						<br />
