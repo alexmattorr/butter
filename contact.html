@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
-<!-- Header -->
+	<!-- Header -->
 	<header class="main-header clearfix">
 		<div class="main-header-wrapper">
 			<div class="main-header-left">
@@ -16,10 +16,11 @@
 
 			<div class="main-header-right">
 				<ul>
+					 
 					<li><a href="userbutter.html">User Butter</a></li>
-					<li><a href="databutter.html">Data Butter</a></li>
+					<li><a href="databutter.html">Data Butter</a></li> 
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="signin.html">Sign In <i class="fa fa-sign-in fa-lg"></i></a></li>
+					<li class="signin-overlay"><a href="#/">Sign In <i class="fa fa-sign-in fa-lg"></i></a></li>
 				</ul>
 			</div>
 
@@ -32,7 +33,7 @@
 			<li><a href="userbutter.html">User Butter</a></li>
 			<li><a href="databutter.html">Data Butter</a></li>
 			<li><a href="contact.html">Contact</a></li>
-			<li><a href="signin.html">Sign In <i class="fa fa-sign-in fa-lg"></i></a></li>
+			<li class="signin-overlay"><a href="#/">Sign In <i class="fa fa-sign-in fa-lg"></i></a></li>
 		</ul>
 	</div>
 	<!-- End Header -->
@@ -55,7 +56,6 @@
 		    	</div>
 		    </div>
 		</section>
-	</div>
 
 	<!-- FOOTER -->
 		<footer class="footer-top">
@@ -87,6 +87,30 @@
 			</section>
 		</footer>
 	<!-- END FOOTERs -->
+	</div>
+	<!-- END CONTAINER -->
+	
+	<!-- OVERLAY -->
+	<div class="container overlay">
+		<section class="section-wrapper">
+			<h3 class="overlay-button">X</h3>
+			
+			<div class="slice">
+		    	<div class="signin-form padding-top">
+		    		<form action="#/" method="POST" name="contact-form" enctype="multipart/form-data">
+						<input type="email" name="email" id="email" placeholder="email" required/>
+						<br />
+						<input type="password" name="password" id="password" placeholder="password" required/>
+						<br />
+						<input type="submit" id="submit" name="submit" value="sign in" />	
+					</form>
+		    	</div>
+		    </div>
+		</section>
+	</div>
+	<!-- END OVERLAY -->
+
+
 	
 
 	<script src="js/jquery-2.1.1.min.js"></script>

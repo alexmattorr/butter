@@ -1,8 +1,30 @@
-.signin-page {
-	width: 100%;
-	height: 600px;
-	background: $coal;
+.is-active {
+	display: block !important;
+}
 
+.overlay {
+	width: 100%;
+	height: 100%;
+    position: fixed;
+    background-color:rgba($coal, 0.9);
+    z-index:9999;
+
+    display: none;
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    .overlay-button {
+    	float: right;
+    	color: $white;
+
+    	cursor: pointer;
+
+    	padding: 20px;
+    }
+    
 	.signin-form {
 		text-align: center;
 		input[type=password],

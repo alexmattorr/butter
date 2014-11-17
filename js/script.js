@@ -12,6 +12,25 @@ function mobileColor() {
 	});
 };
 
+function signinOverlay() {
+	$(document).ready(function(){
+		$(".signin-overlay").click(function(){
+			$(".overlay").addClass("is-active");
+		});
+		
+		$(".overlay-button").click(function(){
+			$(".overlay").removeClass("is-active");
+		})
+	});	
+};
+
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p:first").addClass("intro");
+  });
+});
 
 mobileToggle();
 mobileColor();
+signinOverlay();
