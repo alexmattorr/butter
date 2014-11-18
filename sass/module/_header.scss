@@ -53,6 +53,9 @@
 		width: 150px;
 		height: auto;
 	}
+
+	a {padding: 21px 15px 14px;}
+	.fa-home {margin-top: 4px;}
 }
 
 .main-header-right {
@@ -113,6 +116,9 @@
 			color: $white;
 			display: block;
 			padding: 15px 0;
+
+			transition-property: background, color;
+			transition-duration: .3s;
 
 			&:hover {
 				background: $white;

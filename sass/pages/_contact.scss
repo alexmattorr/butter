@@ -67,7 +67,7 @@
 		input[type=submit] {
 			text-transform: uppercase;
 
-			transition-property: background;
+			transition-property: background, color;
 			transition-duration: .3s;
 
 			&:hover {
