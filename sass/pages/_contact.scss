@@ -104,4 +104,15 @@
 	}
 }
 
+@media all and (max-width: $tablet) {
+	input[type=text],
+	input[type=email],
+	input[type=password],
+	input[type=submit],
+	textarea {
+		width: 87% !important;
+	}
+	.contact-page-info {h5 {font-size: .7rem;}}
+}
+
 
