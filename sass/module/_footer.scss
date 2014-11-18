@@ -17,6 +17,8 @@
 		li {padding: 0 5px;}
 		a {
 			color: $yellow;
+			transition-property: color;
+			transition-duration: .3s;
 			&:hover {color: $white;}
 		}
 	}
