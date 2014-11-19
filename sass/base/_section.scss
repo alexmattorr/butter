@@ -4,3 +4,20 @@
 	margin: 0 auto;
 	padding: 75px 15px 25px 15px;
 }
+
+.section-1-3 {
+	width: 33%;
+	height: 200px;
+	float: left;
+
+	img {
+		width: 80%;
+		height: auto;
+		overflow: hidden;
+	}
+}
+
+.section-2-3 {
+	width: 66.66%;
+	float: left;
+}
