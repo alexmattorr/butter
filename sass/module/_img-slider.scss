@@ -4,7 +4,7 @@
 
 .carousel-inner {
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -22,7 +22,9 @@
 	position: absolute;
 	z-index: 99;
 
-	padding: 168px 30px;
+	padding: 218px 30px;
+
+	color: $coal;
 }
 
 .carousel-previous {
@@ -35,8 +37,24 @@
 
 .image-active {
 	display: inline-block;
+	opacity: 1;
 }
 
 .image-hidden {
 	display: none;
+	opacity: 0;
+}
+
+@media all and (max-width: $phone) {
+	.carousel-inner {
+		height: 250px;
+		margin-bottom: 25px;
+
+		img {min-height: 250px;}
+	}
+
+	.carousel-previous,
+	.carousel-next {
+		padding: 93px 30px;
+	}
 }
