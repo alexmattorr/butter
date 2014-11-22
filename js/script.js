@@ -34,9 +34,9 @@ $(document).ready(function() {
 			nextActiveImage = $(".carousel-inner img").first();
 		};
 
-		currentActiveImage.removeClass("image-active").addClass("image-hidden").css("z-index", -10);
-		nextActiveImage.addClass("image-active").removeClass("image-hidden").css("z-index", 20);
-		$(".carousel-inner img").not([currentActiveImage, nextActiveImage]).css("z-index", 1);
+		currentActiveImage.removeClass("image-active").addClass("image-hidden");
+		nextActiveImage.addClass("image-active").removeClass("image-hidden");
+		$(".carousel-inner img").not([currentActiveImage, nextActiveImage]);
 
 		e.preventDefault();
 	});
@@ -49,9 +49,9 @@ $(document).ready(function() {
 			nextActiveImage = $(".carousel-inner img").last();
 		}
 
-		currentActiveImage.removeClass("image-active").addClass("image-hidden").css("z-index", -10);
-		nextActiveImage.addClass("image-active").removeClass("image-hidden").css("z-index", 20);
-		$(".carousel-inner img").not([currentActiveImage, nextActiveImage]).css("z-index", 1);
+		currentActiveImage.removeClass("image-active").addClass("image-hidden");
+		nextActiveImage.addClass("image-active").removeClass("image-hidden");
+		$(".carousel-inner img").not([currentActiveImage, nextActiveImage]);
 
 		e.preventDefault();
 	});
