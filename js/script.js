@@ -31,6 +31,12 @@ $(document).ready(function(){
   });
 });
 
+// Image Slider
+$(document).ready(funciton() {
+	
+});
+
+
 mobileToggle();
 mobileColor();
 signinOverlay();
