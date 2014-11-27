@@ -25,6 +25,13 @@
 	padding: 218px 30px;
 
 	color: $coal;
+
+	transition-property: color;
+	transition-duration: .3s;
+
+	&:hover {
+		color: $yellow;
+	}
 }
 
 .carousel-previous {
