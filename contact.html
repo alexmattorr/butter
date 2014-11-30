@@ -50,7 +50,7 @@
 
 		<div class="slice">
 	    	<div class="contact-form padding-bottom">
-	    		<form action="php/mailer.php" method="POST" name="contact-form" enctype="multipart/form-data">
+	    		<form action="php/mailer.php" method="post">
 					<input type="text" name="name" id="name" placeholder="name" required/>
 					<br />
 					<input type="email" name="email" id="email" placeholder="email" required/>
@@ -122,26 +122,7 @@
 	<!-- END CONTAINER -->
 	
 	<!-- OVERLAY -->
-	<div class="container overlay">
-		<section class="section-wrapper">
-			<h3 class="overlay-button">X</h3>
-			
-			<div class="slice">
-		    	<div class="signin-form">
-		    		<form action="#/" method="POST" name="contact-form" enctype="multipart/form-data">
-						<input type="email" name="email" id="email" placeholder="email" required/>
-						<br />
-						<input type="password" name="password" id="password" placeholder="password" required/>
-						<br />
-						<input type="submit" id="submit" name="submit" value="sign in" />
-						<div class="contact-form-existing-user">
-							<input type="checkbox" name="existing-user" value="existing-user">existing user?
-						</div>
-					</form>
-		    	</div>
-		    </div>
-		</section>
-	</div>
+
 	<!-- END OVERLAY -->
 
 

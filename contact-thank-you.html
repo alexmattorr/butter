@@ -9,68 +9,21 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 </head>
 <body>
-	<!-- Header -->
-	<header class="main-header clearfix">
-		<div class="main-header-wrapper">
-			<div class="main-header-left">
-				<a href="index.html"><i class="fa fa-home fa-2x"></i></a>
-			</div>
-
-			<div class="main-header-right">
-				<ul>
-					 
-					<li><a href="userbutter.html">User Butter</a></li>
-					<li><a href="databutter.html">Data Butter</a></li> 
-					<li><a href="contact.html">Contact</a></li>
-					<li class="signin-overlay"><a href="#/">Sign In <i class="fa fa-sign-in fa-lg"></i></a></li>
-				</ul>
-			</div>
-
-			<div class="main-header-mobile-button"><i class="fa fa-bars fa-2x"></i></div>
-		</div>
-	</header>
-
-	<div class="main-header-mobile">
-		<ul>
-			<li><a href="userbutter.html">User Butter</a></li>
-			<li><a href="databutter.html">Data Butter</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li class="signin-overlay"><a href="#/">Sign In <i class="fa fa-sign-in fa-lg"></i></a></li>
-		</ul>
-	</div>
-	<!-- End Header -->
-
-
 	<!-- Container -->
-	<div class="container">
-		
+	<div class="container contact-thank-you">
+		<section class="section-wrapper">
+			<article>
+				<h1>Thank You!</h1>
+			</article>
+		</section>
 	</div>
 	<!-- END CONTAINER -->
 
-
-	<!-- OVERLAY -->
-	<div class="container overlay">
-		<section class="section-wrapper">
-			<h3 class="overlay-button">X</h3>
-			
-			<div class="slice">
-		    	<div class="signin-form">
-		    		<form action="#/" method="POST" name="contact-form" enctype="multipart/form-data">
-						<input type="email" name="email" id="email" placeholder="email" required/>
-						<br />
-						<input type="password" name="password" id="password" placeholder="password" required/>
-						<br />
-						<input type="submit" id="submit" name="submit" value="sign in" />
-						<div class="contact-form-existing-user">
-							<input type="checkbox" name="existing-user" value="existing-user">existing user?
-						</div>
-					</form>
-		    	</div>
-		    </div>
-		</section>
-	</div>
-	<!-- END OVERLAY -->
-
+	<script type="text/javascript">
+		setTimeout(function() {
+			window.location.href = 'contact.html';
+		}, 2000);
+	</script>
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
