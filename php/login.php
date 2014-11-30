@@ -2,6 +2,8 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
+	session_start();
+
 	if ($username && $password) {
 		$connect = mysql_connect("localhost", "root", "root") or die("Couldn't connect!");
 		mysql_select_db(phplogin) or die("Couldn't find db");
@@ -16,7 +18,8 @@
 			}
 
 			if ($username == $dbusername && $password == $dbpassword) {
-				echo "Your'e In!";
+				echo "Your'e In! <a href='member.php'>Click here to enter the member area.</a>";
+				$_SESSION['username']=$username;
 			} else {
 				echo "Incorrect password!";
 			}
