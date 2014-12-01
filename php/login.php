@@ -18,7 +18,8 @@
 			}
 
 			if ($username == $dbusername && $password == $dbpassword) {
-				echo "Your'e In! <a href='member.php'>Click here to enter the member area.</a>";
+				echo "You have succesfully logged in! <br /> <a href='member.php'>Click here to enter the member area.</a>";
+				$url = 'member.php';
 				$_SESSION['username']=$username;
 			} else {
 				echo "Incorrect password!";
