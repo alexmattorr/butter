@@ -12,15 +12,15 @@
 	<header class="main-header clearfix">
 		<div class="main-header-wrapper">
 			<div class="main-header-left">
-				<a href="index.html"><i class="fa fa-home fa-2x"></i></a>
+				<a href="../index.html"><i class="fa fa-home fa-2x"></i></a>
 			</div>
 
 			<div class="main-header-right">
 				<ul>
 					 
-					<li><a href="userbutter.html">User Butter</a></li>
-					<li><a href="databutter.html">Data Butter</a></li> 
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="../userbutter.html">User Butter</a></li>
+					<li><a href="../databutter.html">Data Butter</a></li> 
+					<li><a href="../contact.html">Contact</a></li>
 					<li class="signin-overlay">
 						<?php
 							session_start();
@@ -40,9 +40,9 @@
 
 	<div class="main-header-mobile">
 		<ul>
-			<li><a href="userbutter.html">User Butter</a></li>
-			<li><a href="databutter.html">Data Butter</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="../userbutter.html">User Butter</a></li>
+			<li><a href="../databutter.html">Data Butter</a></li>
+			<li><a href="../contact.html">Contact</a></li>
 			<li class="signin-overlay">
 				<?php
 					session_start();
@@ -60,7 +60,7 @@
 
 	<!-- Container -->
 	<div class="container">
-		<div class="home-container">
+		<div class="member-container">
 			<section class="section-wrapper padding-top">
 				<!-- <h1>Web <span>Butter</span></h1>
 				<h4>Building professionaly developed content for the web.</h4> -->
@@ -77,7 +77,11 @@
 
 		<section class="section-wrapper">
 			<div class="slice">
-		    	
+		    	Name: <input type="text" id="name">
+		    	<input type="submit" id="name-submit" value="get">
+		    	<div id="name-data">
+		    		
+		    	</div>
 		    </div>
 		</section>
 	

@@ -6,7 +6,7 @@
 
 	if ($username && $password) {
 		$connect = mysql_connect("localhost", "root", "root") or die("Couldn't connect!");
-		mysql_select_db(phplogin) or die("Couldn't find db");
+		mysql_select_db('phplogin') or die("Couldn't find db");
 
 		$query  = mysql_query("SELECT * FROM users WHERE username='$username'");
 		$numrows = mysql_num_rows($query);
