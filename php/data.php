@@ -15,10 +15,15 @@
 		}
 	}*/
 	mysql_connect("localhost", 'root', 'root');
+	mysql_select_db('database');
 
 	$name = mysql_real_escape_string($_POST['name']);
-	$progress = mysql_query("SELECT progress FROM database.project WHERE name='$project_name'");
-	$progress_num_rows = mysql_num_rows($progress);
+	
+	if($name==NULL)
+		echo "Please enter a project name!";
+	else {
+		
+	}
 
-	echo $progress_num_rows;
+	// echo $progress_num_rows;
 ?>
