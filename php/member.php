@@ -85,11 +85,6 @@
 					<div id="age">
 
 					</div>
-			    	<!-- Name: <input type="text" id="name">
-			    	<input type="submit" id="name-submit" value="get">
-			    	<div id="name-data">
-			    		
-			    	</div> -->
 				</div>
 		    </div>
 		</section>
