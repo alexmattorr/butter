@@ -57,13 +57,13 @@ function scriptJS() {
 		};
 
 		function dbName() {
-			$('name-submit').on('click', function() {
-				var name = $('#name').val();
+			$('input#name-submit').on('click', function() {
+				var name = $('input#name').val();
 				if($.trim(name) != '') {
 					$.post('../php/name.php', {name: name}, function(data) {
-						$('#name-data').text(data);
+						$('div#name-data').text(data);
 					});
-				}
+				};
 			});	
 		};
 
