@@ -17,6 +17,30 @@
 	}
 }
 
+.carousel-title-wrapper {
+	width: 100%;
+	max-width: $desktop;
+	margin: 0 auto;
+
+	position: relative;
+}
+
+.carousel-title {
+	position: absolute;
+	top: 100px;
+	width: 60%;
+	z-index: 90;
+	
+	color: $white;
+
+	h1 {
+		span {
+			background: $yellow;
+			padding: 0 10px;
+		}
+	}
+}
+
 .carousel-previous,
 .carousel-next {
 	position: absolute;
@@ -24,13 +48,13 @@
 
 	padding: 218px 30px;
 
-	color: $coal;
+	color: $yellow;
 
 	transition-property: color;
 	transition-duration: .3s;
 
 	&:hover {
-		color: $yellow;
+		color: $coal;
 	}
 }
 
@@ -52,12 +76,25 @@
 	opacity: 0;
 }
 
+@media all and (max-width: 1200px) {
+	.carousel-title {
+		margin-left: 150px;
+	}
+}
+
 @media all and (max-width: $phone) {
 	.carousel-inner {
 		height: 250px;
 		margin-bottom: 25px;
 
 		img {min-height: 250px;}
+	}
+
+	.carousel-title {
+		top: 0px;
+		margin-left: 85px;
+		h1 {font-size: 2rem;}
+		h4 {font-size: 1rem;}
 	}
 
 	.carousel-previous,
