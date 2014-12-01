@@ -79,10 +79,10 @@
 			<div class="slice">
 				<div class="form-data">
 					<form name="form">
-						<input type="text" name="name">
-						<input type="button" value="Get" onClick="get()">
+						<input type="text" name="project_name">
+						<input type="button" value="Get Project" onClick="get()">
 					</form>
-					<div id="age">
+					<div id="info">
 
 					</div>
 				</div>
@@ -123,9 +123,9 @@
 	<!-- END CONTAINER -->
 	<script type="text/javascript">
 		function get() {
-			$.post('../php/data.php', { name: form.name.value }, 
+			$.post('../php/data.php', { name: form.project_name.value }, 
 				function(output) {
-					$('#age').html(output).show();
+					$('#info').html(output).show();
 				});
 		};
 	</script>
