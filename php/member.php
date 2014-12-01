@@ -77,11 +77,20 @@
 
 		<section class="section-wrapper">
 			<div class="slice">
-		    	Name: <input type="text" id="name">
-		    	<input type="submit" id="name-submit" value="get">
-		    	<div id="name-data">
-		    		
-		    	</div>
+				<div class="form-data">
+					<form name="form">
+						<input type="text" name="name">
+						<input type="button" value="Get" onClick="get()">
+					</form>
+					<div id="age">
+
+					</div>
+			    	<!-- Name: <input type="text" id="name">
+			    	<input type="submit" id="name-submit" value="get">
+			    	<div id="name-data">
+			    		
+			    	</div> -->
+				</div>
 		    </div>
 		</section>
 	
@@ -117,6 +126,14 @@
 		<!-- END FOOTERs -->
 	</div>
 	<!-- END CONTAINER -->
+	<script type="text/javascript">
+		function get() {
+			$.post('../php/data.php', { name: form.name.value }, 
+				function(output) {
+					$('#age').html(output).show();
+				});
+		};
+	</script>
 	<script src="../js/jquery-2.1.1.min.js"></script>
 	<script src="../js/script.js"></script>
 </body>
