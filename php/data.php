@@ -25,5 +25,5 @@
 		
 	}
 
-	// echo $progress_num_rows;
+	echo $progress_num_rows;
 ?>

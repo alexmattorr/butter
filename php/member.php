@@ -17,9 +17,6 @@
 
 			<div class="main-header-right">
 				<ul>
-					 
-					<li><a href="../userbutter.html">User Butter</a></li>
-					<li><a href="../databutter.html">Data Butter</a></li> 
 					<li><a href="../contact.html">Contact</a></li>
 					<li class="signin-overlay">
 						<?php
@@ -40,8 +37,6 @@
 
 	<div class="main-header-mobile">
 		<ul>
-			<li><a href="../userbutter.html">User Butter</a></li>
-			<li><a href="../databutter.html">Data Butter</a></li>
 			<li><a href="../contact.html">Contact</a></li>
 			<li class="signin-overlay">
 				<?php

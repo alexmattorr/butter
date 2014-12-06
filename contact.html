@@ -117,11 +117,27 @@
 	<!-- END CONTAINER -->
 	
 	<!-- OVERLAY -->
-
+	<div class="container overlay">
+		<section class="section-wrapper">
+			<h3 class="overlay-button">X</h3>
+			
+			<div class="slice">
+		    	<div class="signin-form">
+		    		<form action="php/login.php" method="POST" name="contact-form" enctype="multipart/form-data">
+						<input type="text" name="username" id="username" placeholder="username" required/>
+						<br />
+						<input type="password" name="password" id="password" placeholder="password" required/>
+						<br />
+						<input type="submit" id="submit" name="submit" value="sign in" />
+						<div class="contact-form-existing-user">
+							<input type="checkbox" name="existing-user" value="existing-user">existing user?
+						</div>
+					</form>
+		    	</div>
+		    </div>
+		</section>
+	</div>
 	<!-- END OVERLAY -->
-
-
-	
 
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/script.js"></script>
