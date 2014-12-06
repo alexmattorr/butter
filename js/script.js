@@ -55,13 +55,26 @@ function scriptJS() {
 				e.preventDefault();
 			});
 		};
-		
+
+		// Change Text
+		function changer() {
+			var items = ["Web Apps", "Mobile Apps", "Mobile Games", "CMS", "Databases"];
+			var counter = 0;
+			var elem = document.getElementById("changeText");
+			setInterval(change, 5000);
+
+			function change() {
+				elem.innerHTML = items[counter];
+				counter++;
+				if(counter >= items.length) { counter = 0; }
+			}
+		}
 		mobileToggle();
 		mobileColor();
 		signinOverlay();
 		imgSlider();
+		changer();
 	});
 };
 
 scriptJS();
-

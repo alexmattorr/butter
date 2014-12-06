@@ -5,6 +5,10 @@
 	transition-property: opacity;
 	transition-duration: .3s;
 	transition-timing-function: ease-in;
+
+	.signin-form {
+		display: block !important;
+	}
 }
 
 .overlay {
@@ -35,6 +39,7 @@
     }
     
 	.signin-form {
+		display: none;
 		text-align: center;
 		input[type=text],
 		input[type=password],

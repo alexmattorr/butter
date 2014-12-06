@@ -37,6 +37,19 @@
 	}
 }
 
+.intro {
+	.slice-item {
+		&:first-child {
+			text-align: right;
+		}
+	}
+	span {
+		color: $white;
+		background: $yellow;
+		margin-left: 15px;
+		padding: 5px 10px;
+	}
+}
 
 .home-full-item {
 	width: 75%;
