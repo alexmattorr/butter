@@ -92,14 +92,17 @@
 	.main-header-left { width: 80%; }
 
 	.main-header-mobile { 
-		display: none; 
+		display: block;
+	 	height: 0;
+		overflow: hidden;
 
 		position: absolute;
-		top: 55px;
 		z-index: 200;
-
 		background: $yellow;
 		width: 100%;
+
+		transition-property: height;
+		transition-duration: .5s;
 
 		li {
 			text-align: center;
@@ -110,21 +113,22 @@
 			&:last-child {
 				border-bottom: 2px solid $coal;
 			}
-		}
+			a {
+				color: $white;
+				display: block;
+				padding: 15px 0;
 
-		a {
-			color: $white;
-			display: block;
-			padding: 15px 0;
+				transition-property: background, color;
+				transition-duration: .3s;
 
-			transition-property: background, color;
-			transition-duration: .3s;
-
-			&:hover {
-				background: $white;
-				color: $yellow;
+				&:hover {
+					background: $white;
+					color: $yellow;
+				}
 			}
 		}
+
+		&.is-active { height: 111px; }
 	}
 
 	.main-header-mobile-button {

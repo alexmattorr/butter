@@ -1,5 +1,10 @@
 .is-active {
-	display: block !important;
+	opacity: 1 !important;
+	z-index: 9999 !important;
+
+	transition-property: opacity;
+	transition-duration: .3s;
+	transition-timing-function: ease-in;
 }
 
 .overlay {
@@ -7,9 +12,13 @@
 	height: 100%;
     position: fixed;
     background-color: $yellow;
-    z-index:9999;
 
-    display: none;
+    opacity: 0;
+    z-index: 0;
+
+    transition-property: opacity;
+	transition-duration: .3s;
+	transition-timing-function: ease-out;
     
     top:0;
     left:0;

@@ -3,7 +3,7 @@ function scriptJS() {
 
 		function mobileToggle() {
 			$(".main-header-mobile-button").click(function(){
-		    	$(".main-header-mobile").toggle();
+		    	$(".main-header-mobile").toggleClass('is-active');
 			});
 		};
 
