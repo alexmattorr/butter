@@ -6,7 +6,6 @@
             . 'Message: ' . $_POST['message'];
         mail('alexsmander@stu.aii.edu', 'Sample Contact Us Form', $msg);
         header('location: contact-thank-you.html')
-    } else {
+    } else
         header('location: contact.html');
-    }
 ?>

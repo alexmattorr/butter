@@ -25,7 +25,7 @@
 				echo "Incorrect password!";
 			}
 		} else {
-			die("That user doesn't exist!");
+			die("That user doesn't exist! <br /> <a href='../index.html'>Click here to return home.</a>");
 		}
 
 	} else {
