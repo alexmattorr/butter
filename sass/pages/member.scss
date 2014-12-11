@@ -16,3 +16,31 @@
 	}
 }
 
+.upload-form {
+	width: 283px;
+	border: 1px solid gray;
+	padding-left: 10px;
+	input[type=submit] {
+		width: 67px;
+		background: $white;
+		padding: 10px;
+
+		cursor: pointer;
+
+		border:none;
+		border-left: 1px solid gray;
+
+		text-transform: uppercase;
+		transition-property: background, color;
+		transition-duration: .3s;
+		&:focus {
+			outline: 0;
+		}
+
+		&:hover {
+			color: $white;
+			background: $yellow;
+		}
+	}
+}
+

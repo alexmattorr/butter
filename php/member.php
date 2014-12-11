@@ -85,9 +85,9 @@
 		    </div> 
 		-->
 			<div class="slice">
-				<form action="upload.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<input type="submit" value="upload">
+				<form class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+					<input class="upload-btn" type="file" name="file">
+					<input class="upload-submit-btn" type="submit" value="upload">
 				</form>
 			</div>
 		</section>
