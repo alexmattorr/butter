@@ -71,19 +71,6 @@
 		</div>
 
 		<section class="section-wrapper">
-		<!-- 		
-			<div class="slice">
-				<div class="form-data">
-					<form name="form">
-						<input type="text" name="project_name">
-						<input type="button" value="Get Project" onClick="get()">
-					</form>
-					<div id="info">
-
-					</div>
-				</div>
-		    </div> 
-		-->
 			<div class="slice">
 				<form class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
 					<input class="upload-btn" type="file" name="file">
